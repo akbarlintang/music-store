@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.brand {
+    font-size: 23px !important;
+    margin-left: 20px;
+}
+
+.nav-item {
+    margin-left: 15px;
+}
+
+.nav-item:hover {
+    background-color: #52575d;
+    border-radius: 5px;
+}
+
+.login-btn > .btn {
+    margin-right: 10px;
+}
+
+@media (max-width: 1000px) {
+    .nav-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .login-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .login-btn > .btn {
+        margin: 10px 0;
+        width: 70%;
+    }
+}
+
+.carousel {
+    margin-top: 60px;
+    background-color: #41444b;
+}
+
+.carousel-inner img {
+    margin: auto;
+}
+
+.carousel-item{
+    position: relative !important;
+}
+
+.carousel-item > img {
+    max-height: 500px;
+    max-width: 500px;
+}
+
+.carousel-caption > h5,
+.carousel-caption > p {
+    font-style: italic;
+}
+
+.black-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.main-text {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    color: #fff;
+}
+
+.headline > h5 {
+    font-weight: 100 !important;
+}
+
+.headline > h3 {
+    margin-top: 15px;
+    font-weight: 800 !important;
+    font-size: 40px;
+}
+
+.shop-now {
+    margin-top: 15px;
+    padding: 12px 40px !important;
+    border-radius: 50px !important;
+}
+
+@media (max-width: 500px){
+    .main-text {
+        top: 150px;
+    }
+    .headline > h5 {
+        font-size: 17px;
+    }
+    .headline > h3 {
+        font-size: 28px;
+    }
+    .shop-now {
+        padding: 8px 20px !important;
+    }
+}
+
+section {
+    margin-top: 100px;
+}
