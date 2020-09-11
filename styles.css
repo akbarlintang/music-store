@@ -410,3 +410,12 @@ footer {
 .footer-right > a:hover {
     color: #fff;
 }
+
+.tour-header > h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #222831;
+    font-family: "Noto Sans";
+    font-weight: bolder;
+    margin: 40px 0;
+}
