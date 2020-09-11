@@ -3,6 +3,7 @@
     padding: 0;;
     box-sizing: border-box;
     font-family: 'Roboto', 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .brand {
@@ -112,22 +113,38 @@
     }
 }
 
-.container {
-    margin-top: 100px;
-}
-
-.jumbotron > h1 {
-    font-family: "Noto Sans";
-    font-weight: bolder;
-    font-size: 70px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-}
-
 .grid {
     display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    align-items: center !important;
     margin: 60px 0;
+    padding: 0 100px;
+}
+
+@media (max-width: 770px) {
+    .grid {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+    #why-choose-us .desc {
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    #why-choose-us h2,
+    #why-choose-us .desc > p {
+        padding: 0 50px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 770px) {
+    #why-choose-us .desc {
+        padding-left: 30px;
+    }
 }
 
 .box {
@@ -135,15 +152,11 @@
     max-width: 100px;
     max-height: 100px;
     border-radius: 50%;
-    margin-left:15vw;
-}
-
-.desc > h3 {
-    color: #fff;
+    display: flex;
+    justify-content: center;
 }
 
 #why-choose-us .icon {
-    float: left;
     margin: 25px;
     height: 125px;
     color: #222831;
@@ -152,7 +165,6 @@
 #why-choose-us .desc {
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
     justify-content: center;
     height: 110px;
     width: 80vw;
@@ -165,6 +177,8 @@
     color: #fff;
     font-family: "Noto Sans";
     font-weight: bolder;
+    margin: 30px 0;
+    padding-bottom: 30px;
 }
 
 #why-choose-us {
@@ -172,8 +186,21 @@
     padding: 50px 0;
 }
 
-#what-we-do {
-    padding: 50px 50px;
+#what-we-do .icon {
+    float: left;
+    margin: 25px;
+    height: 125px;
+    color: #fff;
+}
+
+#what-we-do .desc {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    justify-content: center;
+    height: 110px;
+    width: 80vw;
+    color: #222831;
 }
 
 #what-we-do > h2 {
@@ -182,11 +209,65 @@
     color: #222831;
     font-family: "Noto Sans";
     font-weight: bolder;
+    margin: 40px 0;
 }
 
-#what-we-do > p {
-    margin-top: 40px;
+#what-we-do {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#what-we-do > h4 {
+    text-align: center;
+    padding: 10px 10vw;
+}
+
+#contact-us > h2 {
+    text-align: center;
+    font-size: 40px;
     color: #222831;
+    font-family: "Noto Sans";
+    font-weight: bolder;
+    margin: 40px 0;
+}
+
+#contact-us {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#contact-us > h4 {
+    text-align: center;
+    padding: 10px 10vw;
+}
+
+@media (max-width: 580px) {
+    #what-we-do > h4,
+    #contact-us > h4 {
+        font-size: 18px;
+    }
+}
+
+.black-bar {
+    background-color: #444;
+    margin: 0 18vw;
+}
+
+.black-bar > h5 {
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.btn-email {
+    margin: 10px 0 !important;
+}
+
+.btn-shop > .btn {
+    margin: 30px 0;
+    padding: 15px 40px;
+    border-radius: 15px;
 }
 
 .jumbotron {
@@ -194,4 +275,138 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 600px;
+    max-height: 100%;
+    margin-top: 60px;
+}
+
+
+.display-1 {
+    margin-top: 100px;
+}
+
+.display-1 > h1 {
+    font-family: "Noto Sans";
+    font-weight: bolder;
+    font-size: 70px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 420px){
+    .jumbotron {
+        height: 400px;
+    }
+    .display-1 {
+        margin-top: 100px;
+    }
+    .display-1 > h1 {
+        font-size: 60px;
+    }
+}
+
+.btn-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 640px) {
+    .btn-nav {
+        display: none;
+    }
+}
+
+.btn-jmbtrn {
+    margin: 0 20px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    border-radius: 10px !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    border: none !important;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer > a {
+    color: #fff;
+    margin: 15px 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.logo-footer > a:hover {
+    background-color: #52575d;
+    color: #fff;
+}
+
+.logo-footer > a > i {
+    font-size: 40px;
+}
+
+.logo-footer > a > i:hover {
+    color: #fff;
+}
+
+.container-fluid > h2 {
+    font-weight: 100;
+    font-family: 'Noto Sans';
+    font-style: italic;
+}
+
+.container-fluid {
+    margin: 70px 0;
+}
+
+.container-fluid > p {
+    margin: 0;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 0 120px 0 120px;
+}
+
+@media (max-width: 680px) {
+    .footer-copyright {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-right > a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.footer-right > a:hover {
+    color: #fff;
 }
