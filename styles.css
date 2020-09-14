@@ -6,6 +6,14 @@
     scroll-behavior: smooth;
 }
 
+@media (max-width: 500px) {
+    .container {
+        margin: 0px !important;
+        padding: 0px !important;
+        width: 100%;
+    }
+}
+
 .brand {
     font-size: 23px !important;
     margin-left: 20px;
@@ -131,7 +139,7 @@
     }
     #why-choose-us .desc {
         align-items: center;
-        margin: 20px 0;
+        margin: 40px 0;
     }
 
     #why-choose-us h2,
@@ -250,7 +258,7 @@
 
 .black-bar {
     background-color: #444;
-    margin: 0 18vw;
+    margin: 0 15vw;
 }
 
 .black-bar > h5 {
@@ -386,7 +394,8 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     font-size: 13px;
-    padding: 0 120px 0 120px;
+    padding: 0 120px;
+    text-align: center;
 }
 
 @media (max-width: 680px) {
@@ -394,6 +403,8 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0 20px;
+        text-align: center;
     }
 }
 
@@ -418,4 +429,23 @@ footer {
     font-family: "Noto Sans";
     font-weight: bolder;
     margin: 40px 0;
+}
+
+.tour-container {
+    padding: 20px;
+    margin: 0 20px;
+}
+
+.tour-row {
+    border-bottom: 1px solid #222831;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tour-row:last-child {
+    border-bottom: none;
 }
