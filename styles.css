@@ -398,7 +398,7 @@ footer {
 
 @media (max-width: 500px) {
     .container-fluid > h2 {
-        font-size: 24px;
+        font-size: 26px;
     }
     .container-fluid > p {
         font-size: 15px;
@@ -467,7 +467,7 @@ td {
 
 @media (max-width: 500px) {
     .tour-header > h2 {
-        font-size: 24px;
+        font-size: 26px;
     }
 }
 
