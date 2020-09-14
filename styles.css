@@ -392,8 +392,16 @@ footer {
 .container-fluid > p {
     margin: 0;
     font-style: italic;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 16px;
+}
+
+@media (max-width: 500px) {
+    .container-fluid > h2 {
+        font-size: 28px;
+    }
+    .container-fluid > p {
+    }
 }
 
 .footer-copyright {
@@ -454,6 +462,12 @@ td {
     font-family: "Noto Sans";
     font-weight: bolder;
     margin: 40px 0;
+}
+
+@media (max-width: 500px) {
+    .tour-header > h2 {
+        font-size: 28px;
+    }
 }
 
 .tour-container {
