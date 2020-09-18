@@ -53,7 +53,7 @@ function addiItemToCart(title, price, imageSrc) {
     var cartRow = document.createElement('tr')
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
-    var cartItemNames = cartItems.getElementsByClassName('cart-item')
+    var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
     for (var i = 0 ; i <cartItemNames.length ; i++) {
         if (cartItemNames[i].innerText == title) {
             alert('This item is already added to the cart')
@@ -61,15 +61,17 @@ function addiItemToCart(title, price, imageSrc) {
         }
     }
     var cartRowContents = `
-            <td class="cart-group">
+            <td class="align-middle">
                 <img class="cart-img" src="${imageSrc}" alt="">
-                <span class="cart-item">${title}</span>
             </td>
-            <td class="cart-price">${price}</td>
-            <td class="cart-qty">
+            <td class="cart-item align-middle">
+                <span class="cart-item-title">${title}</span>
+            </td>
+            <td class="cart-price align-middle">${price}</td>
+            <td class="cart-qty align-middle">
                 <input type="number" value="1" class="cart-input-num">
             </td>
-            <td><button class="shop-item-btn btn btn-danger cart-btn btn-remove" role="button">Remove</button></td>`
+            <td class="align-middle"><button class="shop-item-btn btn btn-danger cart-btn btn-remove" role="button">Remove</button></td>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
     cartRow.getElementsByClassName('btn-remove')[0].addEventListener('click', removeCartItem)

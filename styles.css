@@ -38,11 +38,6 @@
     margin-right: 15px;
 }
 
-.cart-group {
-    display: flex;
-    padding: 0 20px !important;
-}
-
 .cart-table {
     overflow-x: auto;
 }
@@ -53,16 +48,6 @@
 
 .cart-item {
     font-size: 18px;
-    padding: 40px 0 !important;
-    padding-left: 20px !important;
-}
-
-.cart-price {
-    padding: 45px 0 !important;
-}
-
-.cart-qty {
-    padding: 35px 0 !important;
 }
 
 .cart-input-num {
@@ -86,13 +71,12 @@ input[type=number] {
 }
 
 .header {
-    text-align: center;
+    text-align: center !important;
     font-size: 40px;
     color: #222831;
     font-family: "Noto Sans";
     font-weight: bolder;
-    margin-top: 80px;
-    margin-bottom: 30px;
+    margin: 40px 0;
 }
 
 @media (max-width: 1000px) {
@@ -121,8 +105,6 @@ input[type=number] {
 
 .total-payment {
     padding: 20px 0;
-    position: absolute;
-    right: 150px;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
